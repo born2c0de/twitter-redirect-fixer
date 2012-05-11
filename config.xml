@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" id="http://www.sanchitkarve.com/projects/twitterredirectfixer" version="1.0.0-0">
+<widget xmlns="http://www.w3.org/ns/widgets" id="http://www.sanchitkarve.com/projects/twitterredirectfixer" version="1.0.0-1">
 	<name>Twitter Redirect Fixer</name>
 	<description xml:lang="en">Twitter adds redirection to all shared links to learn what links you click. This extension removes Twitter's redirection to protect your privacy. This extension is also able to remove redirection from many third-party URL shorteners (e.g.: bit.ly, on.cnn.com, amzn.to, 4sq.com, omg.fac and many more) without having to dereference them. As a side-effect, all links will load faster as they are no longer passed to redirection servers.</description>
-  	<author href="https://www.sanchitkarve.com" email="write2sanchit@gmail.com">Sanchit Karve</author>
+  	<author href="http://www.sanchitkarve.com" email="write2sanchit@gmail.com">Sanchit Karve</author>
   	<icon src="icons/logo_64.png"/>	
 	<license href="http://www.opensource.org/licenses/MIT" />		
 </widget>
