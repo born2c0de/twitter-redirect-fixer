@@ -20,11 +20,19 @@ function checksearch()
 var fixRedirect = function(event)
 {	
 	var node = event.target;
-	var realURL = node.getAttribute('data-ultimate-url');	
-	if(!realURL)
+	var realURL = node.getAttribute('data-ultimate-url');
+	/*
+		BUGFIX1: Google Groups redirect to main page. (t.co bug probably) More Info: 
+				 https://addons.opera.com/en/extensions/details/twitter-redirect-fixer/?reports&display=en#r39265-30425-comment
+				
+		BUGFIX2: Certain Promoted Tweets with Youtube Links redirect to a page to verify age. The tweet that triggers this bug located at:
+				 https://twitter.com/sleepingdogs/status/200315064803270656	
+	*/
+	if(!realURL || realURL.match(/groups\.google\.com/) || realURL.match(/youtube\.com/))
 	{
 		realURL = node.getAttribute('data-expanded-url');		
-	}	
+	}
+	
 	opera.postError("fixedRedirect");
 	if(realURL && realURL != node.href)
 	{			
