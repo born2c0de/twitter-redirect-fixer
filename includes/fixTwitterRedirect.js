@@ -33,7 +33,6 @@ var fixRedirect = function(event)
 		realURL = node.getAttribute('data-expanded-url');		
 	}
 	
-	opera.postError("fixedRedirect");
 	if(realURL && realURL != node.href)
 	{			
 		node.href=realURL;		
