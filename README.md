@@ -15,5 +15,5 @@ Thanks to that, all I need to do is look for the 'data-ultimate-url' attribute f
 Porting to other Browsers
 ------------
 
-This extension can be easily ported to other browsers as long as you swap 'mouseenter' with 'mouseover'.
-Although the 'mouseenter' event has been present in the W3C specs for almost 10 years, as of May 8 2012, only Opera and IE support it. (and you thought Firefox, Chrome and Safari cared about web standards)
+This extension can be improved by swapping 'mouseover' with 'mouseenter'.
+Although the 'mouseenter' event has been present in the W3C specs for almost 10 years, as of July 27 2013, only Opera(Presto) and IE support it. (and you thought Firefox, Chrome and Safari cared about web standards)
