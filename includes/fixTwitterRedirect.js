@@ -19,7 +19,7 @@ function checksearch()
 
 var fixRedirect = function(event)
 {	
-	var node = event.target.parentNode;
+	var node = event.target;
 	var realURL = node.getAttribute('data-ultimate-url');
 	/*
 		BUGFIX1: Google Groups redirect to main page. (t.co bug probably) More Info: 
@@ -37,7 +37,7 @@ var fixRedirect = function(event)
 	{			
 		node.href=realURL;		
 	}	
-	node.removeEventListener('mouseover',fixRedirect,false);
+	node.removeEventListener('mouseenter',fixRedirect,false);
 };
 
 function huntForLinks()
@@ -49,6 +49,6 @@ function huntForLinks()
 		if(!realURL) realURL = items[i].getAttribute('data-expanded-url');		
 		
 		if(realURL != null && realURL != items[i].href)
-			items[i].addEventListener('mouseover',fixRedirect,false);		
+			items[i].addEventListener('mouseenter',fixRedirect,false);		
 	}
 }
